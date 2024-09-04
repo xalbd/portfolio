@@ -8,7 +8,7 @@ interface Props {
 const { href, body, icon } = Astro.props;
 ---
 
-<a href={href} target="_blank" class="flex flex-row items-center my-2 hover:text-special-900">
+<a href={href} target="_blank" class="flex flex-row items-center my-2 max-w-fit hover:text-special-900">
     <img src={icon} class="w-6 h-6 mr-2">
-    <p class="flex-0 text-lg">{body}</p>
+    <p class="text-lg">{body}</p>
 </a>
