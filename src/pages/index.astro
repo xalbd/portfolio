@@ -1,16 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Link from '../components/Link.astro';
+import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro";
 ---
 
 <Layout title="Albert Dong">
-	<main class="flex flex-col h-full">
-		<h1 class="text-6xl font-extrabold uppercase text-theme-dark mb-5">Albert Dong</h1>
-		<p class="text-2xl mb-5">
-			Third-year computer science student at UCLA interested in AI and back-end development
-		</p>
-		<Link href="https://github.com/xalbd" body="github/xalbd" icon="github.svg" />
-		<Link href="https://www.linkedin.com/in/albertdong04" body="in/albertdong04" icon="linkedin.svg" />
-		<p class="mt-auto"> albertd [at] g.ucla.edu</p>
-	</main>
+  <main class="flex flex-col h-full">
+    <h1 class="text-6xl font-extrabold uppercase text-theme-dark mb-5">
+      Albert Dong
+    </h1>
+    <p class="text-2xl mb-5">Third-year computer science student at UCLA</p>
+    <Link
+      href="https://github.com/xalbd"
+      body="github/xalbd"
+      icon="github.svg"
+    />
+    <Link
+      href="https://www.linkedin.com/in/albertdong04"
+      body="in/albertdong04"
+      icon="linkedin.svg"
+    />
+    <p class="mt-auto">albertd [at] g.ucla.edu</p>
+  </main>
 </Layout>

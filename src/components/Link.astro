@@ -1,14 +1,18 @@
 ---
 interface Props {
-    href: string;
-    body: string;
-    icon: string;
+  href: string;
+  body: string;
+  icon: string;
 }
 
 const { href, body, icon } = Astro.props;
 ---
 
-<a href={href} target="_blank" class="flex flex-row items-center my-2 max-w-fit hover:text-special-900">
-    <img src={icon} class="w-6 h-6 mr-2">
-    <p class="text-lg">{body}</p>
+<a
+  href={href}
+  target="_blank"
+  class="flex flex-row items-center my-2 max-w-fit hover:text-special-900"
+>
+  <img src={icon} class="w-6 h-6 mr-2" />
+  <p class="text-lg">{body}</p>
 </a>
