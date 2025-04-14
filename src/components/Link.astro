@@ -3,9 +3,10 @@ interface Props {
   href: string;
   body: string;
   icon: string;
+  alt: string;
 }
 
-const { href, body, icon } = Astro.props;
+const { href, body, icon, alt } = Astro.props;
 ---
 
 <a
@@ -13,6 +14,6 @@ const { href, body, icon } = Astro.props;
   target="_blank"
   class="flex flex-row items-center my-2 max-w-fit hover:text-special-900"
 >
-  <img src={icon} class="w-6 h-6 mr-2" />
+  <img src={icon} alt={alt} class="w-6 h-6 mr-2" />
   <p class="text-lg">{body}</p>
 </a>
